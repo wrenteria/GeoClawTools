@@ -4,7 +4,7 @@
 !> The folder bin contains the executable
 !> The makefile sets the compilation and the execution:
 !>  - To compile: 'make'
-!>  - To execute: './bin/max2raster
+!>  - To execute: './bin4max/max2raster
 !> -----------------------------
 !> Author: Willington Renteria
 !> wrenteri@usc.edu
