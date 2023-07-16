@@ -1,0 +1,15 @@
+CC = gfortran
+CFLAGS += -O3 -fopenmp
+SRC_DIR=src
+BIN_DIR=bin4max
+
+default: all
+
+all: create_directory \
+	 $(BIN_DIR)/max2raster
+
+create_directory:
+	@mkdir -p $(BIN_DIR)
+
+$(BIN_DIR)/max2raster: $(SRC_DIR)/max2raster.f08
+	$(CC) -o $@ $< $(CFLAGS)
